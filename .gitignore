@@ -130,3 +130,5 @@ dmypy.json
 
 # Do not upload
 data/
+
+.DS_Store

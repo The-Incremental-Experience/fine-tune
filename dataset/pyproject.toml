@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "dataset"
+version = "0.1.0"
+description = ""
+authors = ["Mikhail Liamets <m.liamets@jacobs-university.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "^1.10.4"
+cohere = "^3.2.3"
+jupyter = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
