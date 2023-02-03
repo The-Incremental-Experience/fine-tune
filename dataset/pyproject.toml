@@ -10,6 +10,11 @@ python = "^3.9"
 pydantic = "^1.10.4"
 cohere = "^3.2.3"
 jupyter = "^1.0.0"
+umap-learn = "^0.5.3"
+altair = "^4.2.2"
+annoy = "^1.17.1"
+datasets = "^2.9.0"
+tqdm = "^4.64.1"
 
 
 [build-system]

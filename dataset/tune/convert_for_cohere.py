@@ -1,9 +1,9 @@
 import json
-from typing import Dict
+from typing import Dict, List
 
-from dataset.data_models import ProcessedDataModel
+from data_models import ProcessedDataModel
 
-JSON_IN = "processed.json"
+JSON_IN = "lala.json"
 TXT_OUT = "for_cohere.txt"
 
 SEPARATOR = "--"
@@ -17,10 +17,10 @@ def sample_from_data(data: ProcessedDataModel) -> str:
     return out
 
 
-processed_data: Dict[str, dict] = json.load(open(JSON_IN, "r"))
+processed_data: List[Dict[str, str]] = json.load(open(JSON_IN, "r"))
 
 data_text = ""
-for o in processed_data.values():
+for o in processed_data:
     o = ProcessedDataModel.parse_obj(o)
 
     data_text += sample_from_data(o)
